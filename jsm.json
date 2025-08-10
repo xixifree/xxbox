@@ -1,5 +1,5 @@
 {
-  "spider": "./jar/fan.txt;md5;018da6256f0aad4c040ad0e7ed4194fd",
+  "spider": "./jar/fan.txt;md5;74a78ddc8af2f6518952b52c94067ee7",
   "lives": [
     {"name": "fmm","type": 0,"url": "https://live.fanmingming.com/tv/m3u/ipv6.m3u","playerType": 1,"ua": "okhttp/3.8.1","timeout": 20,"epg": "https://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
     {"name": "live","type": 0,"url": "https://epg.pw/test_channels.m3u","playerType": 1,"ua": "okhttp/3.8.1","timeout": 20,"epg": "https://epg.112114.xyz/?ch={name}&date={date}","logo": "https://epg.112114.xyz/logo/{name}.png"},
