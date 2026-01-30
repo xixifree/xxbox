@@ -5,7 +5,7 @@ import json
 
 # 下载伪 JSON 文本
 def fetch_raw_json():
-    url = "https://ua.fongmi.eu.org/box.php?url=https%3A%2F%2Fwww.xn--sss604efuw.com%2Ftv"
+    url = "https://www.xn--sss604efuw.com/jm/jiemi.php?url=http%3A%2F%2Fwww.%E9%A5%AD%E5%A4%AA%E7%A1%AC.com%2Ftv"
     resp = requests.get(url, timeout=30)
     resp.encoding = 'utf-8'
     return resp.text
