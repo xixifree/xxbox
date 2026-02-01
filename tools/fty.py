@@ -45,17 +45,26 @@ def extract_and_save_spider(json_text):
 
 # 删除不需要的 sites 项 + 替换链接
 def clean_data(raw_text):
-    raw_text = raw_text.replace(
-        "https://gh-proxy.net/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main",
-        "./FTY"
+    # 统一把各种 GitHub 代理壳替换掉
+    raw_text = re.sub(
+        r'https?://[^/]+/https://raw\.githubusercontent\.com/fantaiying7/EXT/refs/heads/main',
+        './FTY',
+        raw_text
     )
+
     data = demjson.decode(raw_text)
 
     keywords = [
         "豆", "饭太硬", "广告", "PanSso", "YpanSo", "xzso", "米搜", "夸搜", "Aliso", "YiSo"
     ]
+
     original_count = len(data.get("sites", []))
-    data["sites"] = [s for s in data["sites"] if not any(kw in s.get("key", "") or kw in s.get("name", "") for kw in keywords)]
+
+    data["sites"] = [
+        s for s in data["sites"]
+        if not any(kw in s.get("key", "") or kw in s.get("name", "") for kw in keywords)
+    ]
+
     print(f"🧹 清理 {original_count - len(data['sites'])} 条 sites")
     return data
 
