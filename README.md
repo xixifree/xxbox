@@ -103,9 +103,9 @@ V1.1.2版本以下
 
 （15） 还可以使用域名: `https://qist.wyfc.qzz.io/jsm.json` cloudflare Pages 构建
  
-（16） 添加潇洒 接口： https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/xiaosa/api.json 或者 https://qist.wyfc.qzz.io/xiaosa/api.json
+（16） 添加潇洒 接口： https://raw.githubusercontent.com/qist/tvbox/master/xiaosa/api.json 或者 https://qist.wyfc.qzz.io/xiaosa/api.json
  
-（17）添加饭太硬 接口 https://raw.githubusercontent.com/qist/tvbox/refs/heads/master/fty.json 或者 https://qist.wyfc.qzz.io/fty.json
+（17）添加饭太硬 接口 https://raw.githubusercontent.com/qist/tvbox/master/fty.json 或者 https://qist.wyfc.qzz.io/fty.json
 
 1. token.json格式说明：
 
