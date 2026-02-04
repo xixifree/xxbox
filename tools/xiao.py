@@ -8,7 +8,7 @@ primary_jar_path = "jar/spider.jar"
 fallback_jar_path = "../xiaosa/spider.jar"
 
 # 需要删除的站点 key（在此填写即可删除）
-remove_keys = {"版本信息","腾讯视频","优酷视频","芒果视频","爱奇艺","三六零","豆瓣"}   # 可以加多个，例如 {"巴士动漫", "电影牛"}
+remove_keys = {"版本信息","腾讯视频","优酷视频","芒果视频","爱奇艺","三六零","豆瓣","push_agent","配置中心","本地","预告"}   # 可以加多个，例如 {"巴士动漫", "电影牛"}
 
 # 保存 JSON 文件（折叠字典数组为单行，空数组和基础数组一行）
 class CompactJSONEncoder(json.JSONEncoder):
