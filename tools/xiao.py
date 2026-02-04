@@ -119,10 +119,10 @@ if __name__ == "__main__":
     dianshi["sites"] = insert_sites_at_key(dianshi_sites, filtered_sites, "cbh")
 
     # 6. 删除指定的站点
-    before_count = len(dianshi["sites"])
-    dianshi["sites"] = remove_sites(dianshi["sites"], remove_keys)
-    after_count = len(dianshi["sites"])
-    print(f"✅ 删除了 {before_count - after_count} 个指定站点: {', '.join(remove_keys)}")
+    # before_count = len(dianshi["sites"])
+    # dianshi["sites"] = remove_sites(dianshi["sites"], remove_keys)
+    # after_count = len(dianshi["sites"])
+    # print(f"✅ 删除了 {before_count - after_count} 个指定站点: {', '.join(remove_keys)}")
 
     # 7. 设置 spider 为 jar+md5（统一在输出文件中）
     jar_path = primary_jar_path if os.path.exists(primary_jar_path) else fallback_jar_path
